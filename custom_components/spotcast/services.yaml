@@ -107,7 +107,7 @@ start:
         boolean:
     offset:
       name: "Offset"
-      description: "Set offset mode for playback. 0 is the first song."
+      description: "Set offset mode for playback. 0 is the first song. -1 is the last song."
       example: 1
       required: false
       default: 0
@@ -115,7 +115,7 @@ start:
         number:
           mode: box
           step: 1
-          min: 0
+          min: -1
           max: 999999
     start_volume:
       name: "Start Volume"
